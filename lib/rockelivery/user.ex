@@ -1,5 +1,6 @@
 defmodule Rockelivery.User do
   use Ecto.Schema
+
   import Ecto.Changeset
 
   alias Ecto.Changeset
