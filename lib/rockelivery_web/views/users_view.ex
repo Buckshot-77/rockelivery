@@ -1,4 +1,4 @@
-defmodule RockeliveryWeb.UserView do
+defmodule RockeliveryWeb.UsersView do
   use RockeliveryWeb, :view
 
   alias Rockelivery.User

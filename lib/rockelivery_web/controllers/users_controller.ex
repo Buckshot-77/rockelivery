@@ -1,4 +1,4 @@
-defmodule RockeliveryWeb.UserController do
+defmodule RockeliveryWeb.UsersController do
   use RockeliveryWeb, :controller
 
   alias Rockelivery.User
