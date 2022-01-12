@@ -26,15 +26,15 @@ defmodule RockeliveryWeb.UsersController do
     with {:ok, %User{} = user} <- Rockelivery.get_user_by_id(id) do
       connection
       |> put_status(:ok)
-      |> render("show.json", user: user)
+      |> render("user.json", user: user)
     end
   end
 
-  def show(connection, params) do
-    with {:ok, %User{} = user} <- Rockelivery.create_user(params) do
+  def update(connection, params) do
+    with {:ok, %User{} = user} <- Rockelivery.update_user(params) do
       connection
       |> put_status(:ok)
-      |> render("show.json", user: user)
+      |> render("user.json", user: user)
     end
   end
 end

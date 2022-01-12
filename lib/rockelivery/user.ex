@@ -35,7 +35,7 @@ defmodule Rockelivery.User do
     |> execute_changes(params, @update_params)
   end
 
-  defp execute_changes(%__MODULE__{} = struct, params, fields) do
+  defp execute_changes(struct, params, fields) do
     struct
     |> cast(params, fields)
     |> validate_required(fields)
