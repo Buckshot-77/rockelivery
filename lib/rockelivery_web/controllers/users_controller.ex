@@ -29,4 +29,12 @@ defmodule RockeliveryWeb.UsersController do
       |> render("show.json", user: user)
     end
   end
+
+  def show(connection, params) do
+    with {:ok, %User{} = user} <- Rockelivery.create_user(params) do
+      connection
+      |> put_status(:ok)
+      |> render("show.json", user: user)
+    end
+  end
 end
