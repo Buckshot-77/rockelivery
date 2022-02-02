@@ -26,13 +26,4 @@ defmodule Rockelivery.Item do
     |> validate_length(:description, min: 6)
     |> validate_number(:price, greater_than: 0)
   end
-
-  # |> validate_length(:password, min: 8)
-  # |> validate_length(:cep, is: 8)
-  # |> validate_length(:cpf, is: 11)
-  # |> validate_number(:age, greater_than_or_equal_to: 18)
-  # |> validate_format(:email, ~r/@/)
-  # |> unique_constraint([:email])
-  # |> unique_constraint([:cpf])
-  # |> hash_password()
 end
